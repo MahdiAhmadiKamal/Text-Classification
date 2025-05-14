@@ -25,4 +25,18 @@ class EmojiTextClassifier:
             word_vectors[word] = vector
         return word_vectors
 
+    def sentence_to_feature_vectors_avg(self, sentence, word_vectors):
+        
+        sentence = sentence.lower()
+        sentence = sentence.replace(".", "")
+        sentence = sentence.replace("'", "")
+        words = sentence.strip().split()
 
+        sum_vectors = np.zeros((self.dimension, ))
+        for word in words:
+            sum_vectors += word_vectors[word]
+
+        avg_vector = sum_vectors / len(words)
+        return avg_vector
+
+   
