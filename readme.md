@@ -11,6 +11,7 @@
     <td>Train loss</td>
     <td>Train accuracy</td>
     <td>Test loss</td>
+    <td>Test accuracy</td>
   </tr>
   <tr>
     <td>50d</td>
