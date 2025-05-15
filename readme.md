@@ -12,6 +12,7 @@
     <td>Train accuracy</td>
     <td>Test loss</td>
     <td>Test accuracy</td>
+    <td>Inference Time</td>
   </tr>
   <tr>
     <td>50d</td>
