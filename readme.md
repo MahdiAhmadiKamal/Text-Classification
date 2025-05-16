@@ -14,25 +14,25 @@
   </tr>
   <tr>
     <td>50d</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>0.71</td>
+    <td>0.78</td>
+    <td>0.72</td>
+    <td>0.77</td>
+    <td>0.105</td>
   </tr>
    <td>100d</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>0.65</td>
+    <td>0.80</td>
+    <td>0.66</td>
+    <td>0.80</td>
+    <td>0.145</td>
   </tr>
     <td>200d</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>0.47</td>
+    <td>0.85</td>
+    <td>0.49</td>
+    <td>0.86</td>
+    <td>0.159</td>
   </tr>
     <td>300d</td>
     <td></td>
