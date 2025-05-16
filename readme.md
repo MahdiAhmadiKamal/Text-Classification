@@ -35,11 +35,11 @@
     <td>0.159</td>
   </tr>
     <td>300d</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>0.43</td>
+    <td>0.90</td>
+    <td>0.43</td>
+    <td>0.89</td>
+    <td>0.107</td>
   </tr>
 </table>
 
