@@ -82,7 +82,7 @@ class EmojiTextClassifier:
         result = self.model.predict(sentence_avg)
         y_pred = np.argmax(result)
         emoji = self.label_to_emoji(y_pred)
-        print(f"\nThe emoji related to sentence '{sentence}' is {emoji}")
+        print(f"\nThe emoji related to sentence '{sentence}' is {emoji}:")
 
     def label_to_emoji(self, label):
         emojies = ["❤️", "🏀", "😀", "😔", "🍴"]
@@ -91,8 +91,9 @@ class EmojiTextClassifier:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--sentence", type=str, default="I love you")
-    parser.add_argument("--dimension", type=int, default=50)
+    parser.add_argument("--sentence", type=str, help="Write a sentence.")
+    parser.add_argument("--dimension", type=int, 
+                        help="Enter a preferred dimension for feature vectors (50, 100, 200 or 300).")
 
     arg = parser.parse_args()
 
