@@ -61,7 +61,7 @@ class EmojiTextClassifier:
         loss="categorical_crossentropy",
         metrics=["accuracy"]
         )
-        self.model.fit(X_train_avg, Y_train_one_hot, epochs=200)
+        self.model.fit(X_train_avg, Y_train_one_hot, epochs=300)
 
     def test(self, X_test, Y_test, word_vectors):
 
@@ -82,7 +82,7 @@ class EmojiTextClassifier:
         result = self.model.predict(sentence_avg)
         y_pred = np.argmax(result)
         emoji = self.label_to_emoji(y_pred)
-        print(f"\nThe emoji related to sentence '{sentence}' is {emoji}:")
+        print(f"\nThe emoji related to sentence '{sentence}' is: {emoji}")
 
     def label_to_emoji(self, label):
         emojies = ["❤️", "🏀", "😀", "😔", "🍴"]
@@ -115,5 +115,5 @@ if __name__ == "__main__":
     start = time.time()
     obj.predict(input_sentence, word_vectors)
     inference_time = time.time() - start
-    
+
     print("Inference Time:", inference_time)
