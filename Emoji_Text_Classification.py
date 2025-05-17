@@ -117,8 +117,9 @@ if __name__ == "__main__":
     input_sentence = arg.sentence
     
     start = time.time()
-    for i in range(100):
-        obj.predict(input_sentence, word_vectors)
-    inference_time = (time.time() - start)/100
+    # for i in range(100):
+    obj.predict(input_sentence, word_vectors)
+    # inference_time = (time.time() - start)/100
+    inference_time = (time.time() - start)
 
     print("Inference Time:", inference_time)

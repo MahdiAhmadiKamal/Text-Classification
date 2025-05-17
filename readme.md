@@ -7,8 +7,36 @@ Text Classification is the task of assigning a sentence or document an appropria
 <img src="pics\text-classification.avif" width="500">
 
 This project is capable of classifying input sentences into five categories. For this purpose, 
-GloVe, as an unsupervised learning algorithm, is used for obtaining vector representations for words. The categories that the network is trained on are represented by five emojis. The following image shows some examples for sentences related to each label and its related emoji.
-<img src="pics\image.avif" width="500">
+(GloVe)[https://nlp.stanford.edu/projects/glove/], as an unsupervised learning algorithm, is used for obtaining vector representations for words. The categories that the network is trained on are represented by five emojis. The following table shows the categories for sentences and their related emojis and labels.
+
+<table>
+  <tr>
+    <td>Category</td>
+    <td>Emoji</td>
+    <td>Label</td>
+  </tr>
+  <tr>
+    <td>Affection and love</td>
+    <td>❤️</td>
+    <td>0</td>
+  </tr>
+   <td>Sports and exercise</td>
+    <td>🏀</td>
+    <td>1</td>
+  </tr>
+    <td>Gladness and encouragement</td>
+    <td>😀</td>
+    <td>2</td>
+  </tr>
+    <td>Despair and discouragement</td>
+    <td>😔</td>
+    <td>3</td>
+  </tr>
+      <td>Food and nutrition</td>
+    <td>🍴</td>
+    <td>4</td>
+  </tr>
+</table>
 
 ## How to install
 Run this command:
@@ -17,14 +45,19 @@ pip install -r requirements.txt
 ```
 
 ## How to run
-Run the following command:
++ Download (glove.6B.zip)[https://nlp.stanford.edu/data/glove.6B.zip] as the pre-trained word vector
++ Unzip the downloaded file using the following command:
 ```
-python Emoji_Text_Classification.py --sentence "Last year, the Olympic Games were held in Paris." --dimension 300
+unzip -q /PATH/TO/glove.6B.zip -d glove.6B
 ```
-
++ Run the following command:
+```
+python Emoji_Text_Classification.py --sentence "Your sentence." --dimension 50
+```
+NOTE: As `dimension`, you can enter a preferred dimension for feature vectors: 50, 100, 200 or 300
 
 ## Results
-
+### Without Dropout
 <table>
   <tr>
     <td>Feature vector dimensions</td>
