@@ -89,8 +89,8 @@ class EmojiTextClassifier:
         print(f"\nThe emoji related to sentence '{sentence}' is: {emoji}")
 
     def label_to_emoji(self, label):
-        emojies = ["❤️", "🏀", "😀", "😔", "🍴"]
-        return emojies[label]
+        emojis = ["❤️", "🏀", "😀", "😔", "🍴"]
+        return emojis[label]
 
 
 if __name__ == "__main__":
