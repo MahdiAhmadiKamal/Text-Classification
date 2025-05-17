@@ -44,7 +44,7 @@ pip install -r requirements.txt
 ```
 
 ## How to run
-+ Download (glove.6B.zip)[https://nlp.stanford.edu/data/glove.6B.zip] as the pre-trained word vector
++ Download [glove.6B.zip](https://nlp.stanford.edu/data/glove.6B.zip)as the pre-trained word vector
 + Unzip the downloaded file using the following command:
 ```
 unzip -q /PATH/TO/glove.6B.zip -d glove.6B
