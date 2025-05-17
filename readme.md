@@ -6,7 +6,7 @@ Natural language processing (NLP) combines computational linguistics, machine le
 Text Classification is the task of assigning a sentence or document an appropriate category. The categories depend on the chosen dataset and can range from topics.
 <img src="pics\text-classification.avif" width="500">
 
-This project is capable of classifying input sentences into five categories. For this purpose, (GloVe)[https://nlp.stanford.edu/projects/glove/], as an unsupervised learning algorithm, is used for obtaining vector representations for words. The categories that the network is trained on are represented by five emojis. The following table shows the categories for sentences and their related emojis and labels.
+This project is capable of classifying input sentences into five categories. For this purpose, [insightface](https://github.com/deepinsight/insightface), as an unsupervised learning algorithm, is used for obtaining vector representations for words. The categories that the network is trained on are represented by five emojis. The following table shows the categories for sentences and their related emojis and labels.
 
 <table>
   <tr>
