@@ -26,7 +26,6 @@ class EmojiTextClassifier:
         return word_vectors
 
     def sentence_to_feature_vectors_avg(self, sentence, word_vectors):
-        
         sentence = sentence.lower()
         
         punctuation_marks = [".", ",", "'"]
@@ -53,7 +52,6 @@ class EmojiTextClassifier:
     def train(self, X_train, Y_train, word_vectors):
 
         X_train_avg = []
-
         for x_train in X_train:
             X_train_avg.append(self.sentence_to_feature_vectors_avg(x_train, word_vectors))
 
@@ -70,7 +68,6 @@ class EmojiTextClassifier:
     def test(self, X_test, Y_test, word_vectors):
 
         X_test_avg = []
-
         for x_test in X_test:
             X_test_avg.append(self.sentence_to_feature_vectors_avg(x_test, word_vectors))
 
@@ -81,6 +78,7 @@ class EmojiTextClassifier:
         print(scores)
 
     def predict(self, sentence, word_vectors):
+        
         sentence_avg = self.sentence_to_feature_vectors_avg(sentence, word_vectors)
         sentence_avg = np.array([sentence_avg])
         result = self.model.predict(sentence_avg)
