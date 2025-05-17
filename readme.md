@@ -2,6 +2,7 @@
 
 Natural language processing (NLP) combines computational linguistics, machine learning, and deep learning models to process human language. One of the most important applications of NLP is **Text Classification**.
 <img src="pics\nlp.webp" width="500">
+
 **Text Classification** is the task of assigning a sentence or document an appropriate category. The categories depend on the chosen dataset and can range from topics.
 <img src="pics\text-classification.avif" width="700">
 
