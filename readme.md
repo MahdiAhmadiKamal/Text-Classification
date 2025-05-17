@@ -1,10 +1,10 @@
 # Text Classification 
 
-Natural language processing (NLP) combines computational linguistics, machine learning, and deep learning models to process human language. One of the most important applications of NLP is Text Classification.
+Natural language processing (NLP) combines computational linguistics, machine learning, and deep learning models to process human language. One of the most important applications of NLP is **Text Classification**.
 <img src="pics\nlp.webp" width="500">
 
-Text Classification is the task of assigning a sentence or document an appropriate category. The categories depend on the chosen dataset and can range from topics.
-<img src="pics\text-classification.avif" width="500">
+**Text Classification** is the task of assigning a sentence or document an appropriate category. The categories depend on the chosen dataset and can range from topics.
+<img src="pics\text-classification.avif" width="700">
 
 This project is capable of classifying input sentences into five categories. For this purpose, [GloVe](https://nlp.stanford.edu/projects/glove/) as an unsupervised learning algorithm, is used for obtaining vector representations for words. The categories that the network is trained on are represented by five emojis. The following table shows the categories for sentences and their related emojis and labels.
 
