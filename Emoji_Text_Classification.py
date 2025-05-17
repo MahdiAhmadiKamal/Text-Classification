@@ -28,8 +28,11 @@ class EmojiTextClassifier:
     def sentence_to_feature_vectors_avg(self, sentence, word_vectors):
         
         sentence = sentence.lower()
-        sentence = sentence.replace(".", "")
-        sentence = sentence.replace("'", "")
+        
+        punctuation_marks = [".", ",", "'"]
+        for punctuation_mark in punctuation_marks:
+            sentence = sentence.replace(punctuation_mark, "")
+
         words = sentence.strip().split()
 
         sum_vectors = np.zeros((self.dimension, ))
@@ -41,6 +44,7 @@ class EmojiTextClassifier:
 
     def load_model(self):
         self.model = tf.keras.models.Sequential([
+        # tf.keras.layers.Dropout(0.4, input_shape=(self.dimension,)),
         tf.keras.layers.Dense(5, input_shape=(self.dimension, ), activation="softmax")
         ])
 

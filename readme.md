@@ -2,7 +2,6 @@
 
 ### Results
 
-
 <table>
   <tr>
     <td>Feature vector dimensions</td>
@@ -39,7 +38,7 @@
     <td>0.90</td>
     <td>0.43</td>
     <td>0.89</td>
-    <td>0.107</td>
+    <td>0.139</td>
   </tr>
 </table>
 
