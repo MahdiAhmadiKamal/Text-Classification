@@ -44,7 +44,7 @@ class EmojiTextClassifier:
 
     def load_model(self):
         self.model = tf.keras.models.Sequential([
-        # tf.keras.layers.Dropout(0.4, input_shape=(self.dimension,)),
+        tf.keras.layers.Dropout(0.4, input_shape=(self.dimension,)),
         tf.keras.layers.Dense(5, input_shape=(self.dimension, ), activation="softmax")
         ])
 
@@ -117,7 +117,8 @@ if __name__ == "__main__":
     input_sentence = arg.sentence
     
     start = time.time()
-    obj.predict(input_sentence, word_vectors)
-    inference_time = time.time() - start
+    for i in range(100):
+        obj.predict(input_sentence, word_vectors)
+    inference_time = (time.time() - start)/100
 
     print("Inference Time:", inference_time)
